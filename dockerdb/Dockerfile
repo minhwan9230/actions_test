@@ -1,4 +1,4 @@
-FROM mysql
+FROM mysql:8.0
 
 COPY ./shop_user.sql /docker-entrypoint-initdb.d
 ENV MYSQL_ROOT_PASSWORD=1234
